@@ -1,4 +1,4 @@
-package com.humanae.humanae.model;
+package com.humanae.humanae.models;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -31,7 +31,7 @@ public class Parceiros {
 	private String cnpj;
 	
 	@NotNull
-	@Size(min = 5, max = 150) //
+	@Size(min = 5, max = 150) 
 	private String endereco;
 	
 	@NotNull
