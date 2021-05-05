@@ -42,7 +42,6 @@ public class ParceirosController {
 		return ResponseEntity.status(200).body(repository.findAllByCausaContainingIgnoreCase(descricao));
 	}
 	 
-	
 	@PostMapping("/cadastrar")
 	public ResponseEntity<Parceiros> postParceiros(@RequestBody Parceiros parceiros) {
 		return ResponseEntity.status(201).body(repository.save(parceiros));
