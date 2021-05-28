@@ -15,7 +15,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 public class BasicSecurityConfig  extends WebSecurityConfigurerAdapter{
 	
 	@Autowired
-	private UserDetailsService userDetailsService;
+	private UserDetailsServiceImpl userDetailsService;
 	
 	@Override
 	protected void configure (AuthenticationManagerBuilder auth)  throws Exception{
@@ -32,8 +32,6 @@ public class BasicSecurityConfig  extends WebSecurityConfigurerAdapter{
 		http.authorizeRequests()
 		.antMatchers("/usuarios/logar").permitAll()
 		.antMatchers("/usuarios/cadastrar").permitAll()
-		.antMatchers("/parceiros/logar").permitAll()
-		.antMatchers("/parceiros/cadastrar").permitAll()
 		.anyRequest().authenticated()
 		.and().httpBasic()
 		.and().sessionManagement()
