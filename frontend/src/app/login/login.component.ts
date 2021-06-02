@@ -3,8 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
 import { AuthService } from '../Service/auth.service';
-import { UsuarioLogin } from '../Model/UsuarioLogin';
-import { Usuario } from '../Model/Usuario';
+import { UsuarioLogin } from '../model/UsuarioLogin';
+import { Usuario } from '../model/Usuario';
 
 @Component({
   selector: 'app-login',

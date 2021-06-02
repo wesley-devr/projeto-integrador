@@ -4,8 +4,8 @@ import { Router } from '@angular/router';
 
 import Swal from 'sweetalert2';
 import { AuthService } from '../Service/auth.service';
-import { Usuario } from '../Model/Usuario';
-import { UsuarioLogin } from '../Model/UsuarioLogin';
+import { Usuario } from '../model/Usuario';
+import { UsuarioLogin } from '../model/UsuarioLogin';
 
 @Component({
   selector: 'app-login',
