@@ -10,6 +10,9 @@ import { MenuComponent } from './menu/menu.component';
 import { RodapeComponent } from './rodape/rodape.component';
 import { EntrarComponent } from './entrar/entrar.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
+import { ComponentInicioComponent } from './component-inicio/component-inicio.component';
+import { InicioComponent } from './inicio/inicio.component';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -21,6 +24,9 @@ import { CadastrarComponent } from './cadastrar/cadastrar.component';
     RodapeComponent,
     EntrarComponent,
     CadastrarComponent,
+    ComponentInicioComponent,
+    InicioComponent,
+    LoginComponent,
     
     
     
