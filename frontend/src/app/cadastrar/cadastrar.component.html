@@ -1,64 +1,52 @@
-<div class="container-fluid">
-
-    <div class="row">
-
-        <div class="col-md-6 img-fluid" id='img-bg'></div>
-
-        <div class="col-md-6 m-5 mb-5">
-
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-10">
-
-                    <h1 class="text-center">Cadastro</h1>
-
-                    <div class="form-group">
-                        <label for="nome">Nome</label>
-                        <input class="form-control" type="text" nome="nome" id="nome" placeholder="Seu nome">
-                    </div>
-
-                    <div class="form-group"> 
-                        <label for="usuario">Usuário</label>
-                        <input class="form-control" type="text" nome="usuario" id="usuario" placeholder="Seu usuário">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="foto">Foto</label>
-                        <input class="form-control" type="text" nome="foto" id="foto" placeholder="Sua foto">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="senha">Senha</label>
-                        <input class="form-control" type="password" nome="senha" id="senha" placeholder="Sua senha">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="confirmSenha">Confirmar Senha</label>
-                        <input class="form-control" type="password" nome="confirmSenha" id="confirmSenha"
-                            placeholder="Confirme sua senha">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="tipo">Tipo de Usuário</label>
-                        <select class="form-control" name="tipo" id="tipo">
-                            <option>Selecione um tipo de usuário</option>
-                            <option value="normal">Normal</option>
-                            <option value="adm">Administrador</option>
-                        </select>
-                    </div>
-
-                    <div class="d-flex justify-content-center">
-                        <button class="btn btn-danger mr-4" routerLink='/entrar'>Cancelar</button>
-                        <button class="btn btn-success">Cadastrar</button>
-                    </div>
+<div class="fundo">
+    <a routerLink='/home'>
+        <img class="imagem" src="https://i.imgur.com/AK15wLs.jpg" alt="logo">
+    </a>
+</div>
 
 
-
-                </div>
-            </div>
+<div class="backgroud">
+    <div id="d-color">
+        <div class="form-group">
+            <h1 class="center">Cadastrar</h1>
+            <label for="nome">Nome</label>
+            <input [(ngModel)]='user.nome' (keyup)="validaNome($event)" class="form-control" type="text" id="nome"
+                aria-describedby="text" placeholder="Seu nome">
+            <div class="invalid-tooltip">Digite um nome válido.</div>
         </div>
 
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input [(ngModel)]='user.email' (keyup)="validaEmail($event)" class="form-control" type="email" id="email" aria-describedby="emailHelp"
+              placeholder="Seu email">
+              <div class="invalid-tooltip">Digite um e-mail válido.</div>
+          </div>
 
+        <div class="form-group">
+            <label for="password">Senha</label>
+            <input [(ngModel)]='user.senha' (keyup)="validaSenha($event)" class="form-control" type="password"
+                name="senha" id="senha" placeholder="Digite sua senha">
+            <div class="invalid-tooltip">A senha deve conter no mín 6 caracteres e máx 20.</div>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Confirmar senha</label>
+            <input (keyup)="confirmSenha($event)" class="form-control" type="password" name="confirmSenha"
+                id="confirmSenha" placeholder="Confirme sua senha">
+            <div class="invalid-tooltip">As senhas devem ser iguais.</div>
+        </div>
+
+        <div id="vendedora">
+            <label for="">Deseja se cadastrar como parceiro?</label>
+            <br>
+            <input (change)='tipoUser($event)' type="radio" name="parceiro" id="sim" value="true"> Sim
+            <input (change)='tipoUser($event)' type="radio" name="parceiro" id="nao" value="false" checked> Não
+        </div>
+        <div id="enviar">
+            <button id="cadastrar" type="submit" class="btn" routerLink='/login'>Cancelar</button>
+            <button type="submit" class="btn" (click)="cadastrar()">Cadastrar</button>
+
+        </div>
     </div>
-
 
 </div>
