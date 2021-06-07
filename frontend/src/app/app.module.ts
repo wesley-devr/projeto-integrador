@@ -10,6 +10,7 @@ import { MenuComponent } from './menu/menu.component';
 import { ParceirosComponent } from './parceiros/parceiros.component';
 import { RodapeComponent } from './rodape/rodape.component';
 import { HomeComponent } from './home/home.component';
+import { ContatoComponent } from './contato/contato.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HomeComponent } from './home/home.component';
     EntrarComponent,
     ParceirosComponent,
     RodapeComponent,
-    HomeComponent
+    HomeComponent,
+    ContatoComponent
   ],
   imports: [
     BrowserModule,
