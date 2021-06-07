@@ -11,17 +11,23 @@
     background-color: #FECE2D;
     padding-inline: 0.313rem;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    font-size: 0.938rem ;
+    text-align: justify;
+    
+
 }
 
+
 .bg{
-    background-color: #2672B0;
+    background-color: #2672B0
     
 }
 
 .geral{
 
-    background: rgba(255, 255, 255, 0.8);
-    top: 100px;
+    background-color: whitesmoke;
+
+    top: px;
 }
 
 .mc{
@@ -43,6 +49,7 @@
 }
 .tx-cd{
     margin: 5px;
+
 }
 ul.social-network{
     list-style: none;
@@ -52,7 +59,12 @@ ul.social-network{
   }
   ul.social-network li{
     display: inline;
-    margin: 0;
-    padding: 5px;
+    margin: 5px;
+    padding: 10px;
   }
   
+.icones{
+    color:  #9b7e1e;
+    margin: 5px
+;
+}

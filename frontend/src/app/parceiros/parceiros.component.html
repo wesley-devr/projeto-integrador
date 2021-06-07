@@ -1,38 +1,42 @@
 <div class="bg">
-  <div class="container card rounded geral ">
+  <div class=" ">
     
       <div class="row justify-content-around">
         <div class="col-md-3">
-          <div class=" container d-flex justify-content-center">
-            <div class=" profile-img text-center " style="  margin-top: 3.5rem; width: 12.50rem; height: 12.50rem; border-radius: 50%; overflow: hidden; ">
+          <div class=" d-flex justify-content-center">
+            <div class=" profile-img text-center " style="  margin-top: 3.5rem; width: 12.50rem; height: 12.50rem; border-radius: 50%; overflow: hidden; border-style: solid ; border-color: whitesmoke;">
                 <img class="img-fluid "src="https://i.imgur.com/DkIJ60f.png" alt="imagem de perfil">
             </div >
             <div class="container card-perfil text-center">
-              <h2 class="d-flex justify-content-center">Lorem ipsum dolor</h2>
+              <h2 class="d-flex justify-content-center">Nome da Ong</h2>
               <hr>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nam adipisci nulla quas labore voluptatem aliquid a molestias ab facilis, ratione, odio nostrum voluptate doloribus asperiores maiores ducimus aperiam dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi corrupti unde autem aut temporibus et nostrum, culpa inventore porro placeat libero maxime molestiae facere necessitatibus! Deleniti ipsum optio nostrum explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus maxime dolor nisi dolorum!</p>
-
-          
+              <p  class="font-weight-bold" >  <fa-icon [icon]  ="faCircleInfo" size="1x" [class]="['icones']" ></fa-icon>QUEM SOMOS</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nam adipisci nulla quas labore voluptatem aliquid a molestias ab facilis, ratione, odio nostrum voluptate doloribus asperiores maiores ducimus aperiam dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi corrupti unde autem aut temporibus et nostrum, culpa inventore porro </p>
+              <hr>
+              <p class="font-weight-bold">  <fa-icon [icon]  ="faHeart" size="1x" [class]="['icones']" > </fa-icon> NOSSAS CAUSAS</p>
+              <p>Mulheres </p>
+              <p> Indígenas </p>
+              <hr>
             <div>
-            <ul class="social-network">       
+            <ul class="social-network">
+              <p>Siga-nos nas redes sociais</p>       
               <li>
-                <a href="https://www.facebook.com/generationbrasil" target="_blank" class="icoFacebook">
-                  <fa-icon [icon]  ="faFacebook" size="lg"> </fa-icon>              </a>
+                <a href="#" target="_blank" class="icoFacebook">
+                  <fa-icon [icon]  ="faFacebook" size="2x" [class]="['icones']"> </fa-icon></a>
               </li>
     
               <li>
-                <a href="https://www.instagram.com/generationbrasil/" target="_blank" class="icoInstagram">
-                  <fa-icon [icon]  ="faInstagram" size="lg"> </fa-icon>
-                </a>
-              </li>
-    
-              <li>
-                <a href="https://www.linkedin.com/school/generationbrasil/" target="_blank" class="icoLinkedin">
-                  <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                <a href="#" target="_blank" class="icoInstagram">
+                  <fa-icon [icon]  ="faInstagram" size="2x" [class]="['icones']" > </fa-icon>
                 </a>
               </li>
               </ul>
             </div>
+
+
+            <button type="button" class="btn btn-outline-dark my-3" data-toggle="modal" data-target="#ExemploModalCentralizado">
+              Cadastrar Produto
+            </button>
            </div>
           </div>
         </div>
@@ -252,9 +256,7 @@
 
 
 <!-- Botão para acionar modal -->
-<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#ExemploModalCentralizado">
-  Cadastrar Produto
-</button>
+
 
 <!-- Modal -->
 <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
