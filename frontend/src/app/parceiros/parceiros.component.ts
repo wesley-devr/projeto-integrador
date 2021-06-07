@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-parceiros',
@@ -11,5 +12,7 @@ export class ParceirosComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  faFacebook = faFacebook;
+  faInstagram = faInstagram;
 
 }
