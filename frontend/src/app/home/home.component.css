@@ -1,6 +1,6 @@
 .bg {
-    background-image: url("https://i.imgur.com/H6MQw6n.jpg");
-    height: 550px;
+    background-image: url("https://i.imgur.com/F7txLr5.png");
+    height: 660px;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover; 
@@ -11,12 +11,16 @@
     padding: 100px 3% 20px;
 }
 
+.p-200{
+    padding: 200px 3% 20px;
+}
+
 .p-10{
     padding: 20px 70px;
 }
 
 .fonte{
-    font-family: 'Gil Sans Ultra Bold Condensed';    
+    font-family: 'Roboto';    
 }
 
 .menu-fixo{
@@ -26,4 +30,5 @@
     transition: all .5s;
 }
 
+.img1{}
   

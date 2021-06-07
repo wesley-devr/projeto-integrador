@@ -1,120 +1,64 @@
-    <div class="bg"><!--Classe para imagem background-->
-        <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-transparent .bg">
-        <a class="navbar-brand" href="#">
-            <img src="https://i.imgur.com/53zCib6.png" alt="teste" width="50px" height="50px">
-        </a>
-        <span class="navbar-text">
-            Plantando o futuro
-        </span>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
-            aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-            <ul class="navbar-nav mr-auto ">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Causas
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Educação</a>
-                        <a class="dropdown-item" href="#">Saúde</a>
-                        <a class="dropdown-item" href="#">Mulheres</a>
-                    </div>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#quemSomos">Quem Somos <span class="sr-only">(página atual)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contato</a>
-                </li>
-
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <button class="btn btn-outline-success my-2 my-sm-0 mr-2" type="submit">Entrar</button>
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Registre-se</button>
-            </form>
-        </div>
-    </nav>
-    <!--/Navbar-->
+      <div class="bg"><!--Classe para imagem background-->
+       
 
     <!--Nome Projeto e botão doe agora-->
         <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6 d-flex justify-content-center p-100">
+            <div class="col-md-6 d-flex justify-content-center p-200 text-dark">
                 <h1 class="fonte">Humanae</h1>                
                 
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 d-flex justify-content-center p-10">
+            <div class="col-md-6 d-flex justify-content-center p-10 text-dark">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At dolor ipsam rerum optio in iste nostrum, ea cum iusto accusantium odit unde nesciunt voluptatem fugiat commodi, beatae dicta temporibus! Nostrum!</p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6 d-flex justify-content-center">
-               <button>Doe agora</button>
+               <button class="btn bc text-white">Doe agora</button>
             </div>
         </div>
     </div>
     <!--/Nome Projeto e botão doe agora-->
 </div>
+
+
+
 <!--Container Conheça as Causas-->
 <div class="container">
     <div class="row">
-        <div class="col-md-12 d-flex justify-content-center p-100">
+        <div class="col-md-12 d-flex justify-content-center p-10">
             <h1>Causas que você pode ajudar </h1>
         </div>
     </div>
-    <div class="row d-flex justify-content-center">         
-          
-        <div class="col-md-4 d-flex justify-content-center">
-            <img src="https://i.imgur.com/klSlpnp.png" alt="estudo" height="200x" p-10 >  
-            
+    <!--Carousel Imagens-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="https://i.imgur.com/AP4mlIs.jpg" height="400px" width="450px" alt="Primeiro Slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://i.imgur.com/H6MQw6n.jpg" height="400px" width="450px" alt="Segundo Slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://i.imgur.com/KJGYLCa.jpg" height="400px" width="450px" alt="Terceiro Slide">
+          </div>
         </div>
-
-        <div class="col-md-4 d-flex justify-content-center">
-            <img src="https://i.imgur.com/IqK0QLo.png" alt="saude" height="200x" p-10>
-        </div>
-
-        <div class="col-md-4 d-flex justify-content-center">
-            <img src="https://i.imgur.com/L7RlZBj.png" alt="mulheres" height="200x" p-10>
-        </div>  
-        
-        <div class="col-md-4 d-flex justify-content-center">
-            <h4>Educação</h4>            
-        </div>
-        <div class="col-md-4 d-flex justify-content-center">
-            <h4>Saúde</h4>
-        </div>
-        <div class="col-md-4 d-flex justify-content-center">
-            <h4>Mulheres</h4>
-        </div>
-
-        <div class="col-md-4 d-flex justify-content-center">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus iste, cum vero dolorum, perspiciatis in consequatur ipsam repellat animi fuga doloribus eum voluptatum et sint nam mollitia eius sapiente perferendis.</p>
-        </div>
-        <div class="col-md-4 d-flex justify-content-center">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus iste, cum vero dolorum, perspiciatis in consequatur ipsam repellat animi fuga doloribus eum voluptatum et sint nam mollitia eius sapiente perferendis.</p>
-        </div>
-        <div class="col-md-4 d-flex justify-content-center">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus iste, cum vero dolorum, perspiciatis in consequatur ipsam repellat animi fuga doloribus eum voluptatum et sint nam mollitia eius sapiente perferendis.</p>
-        </div>
-
-        <div class="col-md-4 d-flex justify-content-center">
-            <button>Saiba mais</button>
-        </div>
-        <div class="col-md-4 d-flex justify-content-center">
-            <button>Saiba mais</button>
-        </div>
-        <div class="col-md-4 d-flex justify-content-center">
-            <button>Saiba mais</button>
-        </div>
-
-    </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
 </div>
 <!--/Container Conheça as Causas-->
 
@@ -130,16 +74,12 @@
         <p>A Humanae juntamente com Ongs parceiras, visa criar uma experiência de aproximação entre doador e as causas sociais por nós defendidas, a partir desse vínculo promover um impacto tangível a curto prazo na vida de pessoas em situação de vulnerabilidade.</p>
     </div>
     <div class="col-md-6 d-flex justify-content-center">
-        <img src="https://i.imgur.com/5YbIFzC.png" alt="quem somos" width="600px" height="400px">
+        <img src="https://i.imgur.com/5YbIFzC.png" alt="quem somos" width="500px" height="400px">
     </div>
 </div>
 </div>
 <!--/Quem somos-->
 
 <!--Nosso Time-->
-<div class="row">
-    <div class="col d-flex justify-content-center p-100">
-        <h1>Nosso time</h1>
-    </div>
-</div>
+
 <!--/Nosso Time-->
