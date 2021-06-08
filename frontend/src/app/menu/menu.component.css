@@ -7,3 +7,10 @@ header .gris{
     background: #fff;
     transition: background-color 3s;
 }
+
+.fonte{
+    font-family: "Roboto", sans-serif;
+    color: #fdbe0f; 
+    font-size: 20px;
+}
+
