@@ -1,0 +1,13 @@
+  .bg {
+    background-image: url("https://imgur.com/keSRXno.png");
+    height: 695px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  
+  .navbar-nav > li >a
+  {
+    color: whitesmoke;
+  }
