@@ -1,145 +1,108 @@
-    <div class="bg"><!--Classe para imagem background-->
-        <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-transparent .bg">
-        <a class="navbar-brand" href="#">
-            <img src="https://i.imgur.com/53zCib6.png" alt="teste" width="50px" height="50px">
-        </a>
-        <span class="navbar-text">
-            Plantando o futuro
-        </span>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
-            aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-            <ul class="navbar-nav mr-auto ">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Causas
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Educação</a>
-                        <a class="dropdown-item" href="#">Saúde</a>
-                        <a class="dropdown-item" href="#">Mulheres</a>
-                    </div>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#quemSomos">Quem Somos <span class="sr-only">(página atual)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contato</a>
-                </li>
-
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <button class="btn btn-outline-success my-2 my-sm-0 mr-2" type="submit">Entrar</button>
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Registre-se</button>
-            </form>
-        </div>
-    </nav>
-    <!--/Navbar-->
-
+      <div class="bg"><!--Classe para imagem background-->
+       
+       <app-menu></app-menu>
     <!--Nome Projeto e botão doe agora-->
         <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6 d-flex justify-content-center p-100">
-                <h1 class="fonte">Humanae</h1>                
+            <div class="col-md-6 d-flex justify-content-center p-200 text-dark">
+                <img src="https://i.imgur.com/gMytlUG.png" alt="">              
                 
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 d-flex justify-content-center p-10">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At dolor ipsam rerum optio in iste nostrum, ea cum iusto accusantium odit unde nesciunt voluptatem fugiat commodi, beatae dicta temporibus! Nostrum!</p>
+            <div class="col-md-6 d-flex justify-content-center p-10 fs1">
+                <p>Já pensou que mágico seria ter o poder de doar e transformar a vida de alguém em apenas um clique?</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 d-flex justify-content-center">
-               <button>Doe agora</button>
+            <div class="col-md-5 d-flex justify-content-center">
+               <button class="btn bc text-white">Doe agora</button>
             </div>
         </div>
     </div>
     <!--/Nome Projeto e botão doe agora-->
 </div>
-<!--Container Conheça as Causas-->
-<div class="container">
-    <div class="row">
-        <div class="col-md-12 d-flex justify-content-center p-100">
-            <h1>Causas que você pode ajudar </h1>
+<div class="bgg">
+
+  <!--Container Conheça as Causas-->
+<div class="row">
+  <div class="col-md-12 d-flex justify-content-center p-10">
+    <h1>Destaques do mês</h1>
+  </div>
+</div>
+<div class="container fluid">
+  <div class="card">
+    <div class="face face1">
+        <div class="content">
+            <img src="https://i.imgur.com/a71gy2Y.jpg">        
         </div>
     </div>
-    <div class="row d-flex justify-content-center">         
-          
-        <div class="col-md-4 d-flex justify-content-center">
-            <img src="https://i.imgur.com/klSlpnp.png" alt="estudo" height="200x" p-10 >  
-            
+    <div class="face face2">
+        <div class="content">
+          <h4 class="text-center">Fluxo sem tabu</h4>
+            <p>Fluxo sem tabu? Sim isso pode ser transformado em realidade a muitas mulheres em situação de vunerabilidade</p>
+                <a href="#">Saiba mais</a>
         </div>
-
-        <div class="col-md-4 d-flex justify-content-center">
-            <img src="https://i.imgur.com/IqK0QLo.png" alt="saude" height="200x" p-10>
-        </div>
-
-        <div class="col-md-4 d-flex justify-content-center">
-            <img src="https://i.imgur.com/L7RlZBj.png" alt="mulheres" height="200x" p-10>
-        </div>  
-        
-        <div class="col-md-4 d-flex justify-content-center">
-            <h4>Educação</h4>            
-        </div>
-        <div class="col-md-4 d-flex justify-content-center">
-            <h4>Saúde</h4>
-        </div>
-        <div class="col-md-4 d-flex justify-content-center">
-            <h4>Mulheres</h4>
-        </div>
-
-        <div class="col-md-4 d-flex justify-content-center">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus iste, cum vero dolorum, perspiciatis in consequatur ipsam repellat animi fuga doloribus eum voluptatum et sint nam mollitia eius sapiente perferendis.</p>
-        </div>
-        <div class="col-md-4 d-flex justify-content-center">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus iste, cum vero dolorum, perspiciatis in consequatur ipsam repellat animi fuga doloribus eum voluptatum et sint nam mollitia eius sapiente perferendis.</p>
-        </div>
-        <div class="col-md-4 d-flex justify-content-center">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus iste, cum vero dolorum, perspiciatis in consequatur ipsam repellat animi fuga doloribus eum voluptatum et sint nam mollitia eius sapiente perferendis.</p>
-        </div>
-
-        <div class="col-md-4 d-flex justify-content-center">
-            <button>Saiba mais</button>
-        </div>
-        <div class="col-md-4 d-flex justify-content-center">
-            <button>Saiba mais</button>
-        </div>
-        <div class="col-md-4 d-flex justify-content-center">
-            <button>Saiba mais</button>
-        </div>
-
     </div>
+</div>
+<div class="card">
+    <div class="face face1">
+        <div class="content">
+            <img src="https://i.imgur.com/AP4mlIs.jpg">
+        </div>
+    </div>
+    <div class="face face2">
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                <a href="#">Saiba mais</a>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <div class="face face1">
+        <div class="content">
+            <img src="https://i.imgur.com/KJGYLCa.jpg">
+        </div>
+    </div>
+    <div class="face face2">
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                <a href="#">Saiba Mais</a>
+        </div>
+    </div>
+</div>
 </div>
 <!--/Container Conheça as Causas-->
-
 <!--Quem somos-->
-<div class="container" id="quemSomos">
-<div class="row">
-    <div class="col-md-12 d-flex justify-content-center p-100">
-        <h1>Quem somos?</h1>
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-6 d-flex justify-content-center p-100">
-        <p>A Humanae juntamente com Ongs parceiras, visa criar uma experiência de aproximação entre doador e as causas sociais por nós defendidas, a partir desse vínculo promover um impacto tangível a curto prazo na vida de pessoas em situação de vulnerabilidade.</p>
-    </div>
-    <div class="col-md-6 d-flex justify-content-center">
-        <img src="https://i.imgur.com/5YbIFzC.png" alt="quem somos" width="600px" height="400px">
-    </div>
-</div>
-</div>
-<!--/Quem somos-->
+<div class="container-fluid" id="quemSomos">
+  <div class="row">
+      <div class="col-md-12 d-flex justify-content-center p-100">
+          <h1>O que é a Humanae?</h1>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 d-flex p-10 ">
+      <img src="https://i.imgur.com/5YbIFzC.png" alt="quem somos" width="500px" height="400px">
+  </div>
+      <div class="col-md-6 d-flex justify-content-center fs1 p-100">
+          <p>A Humanae juntamente com Ongs parceiras, visa criar uma experiência de aproximação entre doador e as causas sociais por nós defendidas, a partir desse vínculo promover um impacto tangível a curto prazo na vida de pessoas em situação de vulnerabilidade.</p>
+      </div>
+      
+  </div>
+  </div>
+  <!--/Quem somos-->
+
+
+
+
+
+
+<app-contato></app-contato>
 
 <!--Nosso Time-->
-<div class="row">
-    <div class="col d-flex justify-content-center p-100">
-        <h1>Nosso time</h1>
-    </div>
-</div>
+
 <!--/Nosso Time-->
+
+<app-rodape></app-rodape>
+
+</div>
