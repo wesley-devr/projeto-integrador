@@ -9,6 +9,7 @@ import { MenuComponent } from './menu/menu.component';
 import { ParceirosComponent } from './parceiros/parceiros.component';
 import { RodapeComponent } from './rodape/rodape.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CarrinhoComponent } from './carrinho/carrinho.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     RodapeComponent,
     EntrarComponent,
     CadastrarComponent,
-    ParceirosComponent
+    ParceirosComponent,
+    CarrinhoComponent
   ],
   imports: [
     BrowserModule,

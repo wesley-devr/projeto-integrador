@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faHandHoldingHeart, faHeart, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
+import { faHeart, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-parceiros',
