@@ -8,28 +8,16 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common'
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { RodapeComponent } from './rodape/rodape.component';
-import { EntrarComponent } from './entrar/entrar.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
-import { ComponentInicioComponent } from './component-inicio/component-inicio.component';
-import { InicioComponent } from './inicio/inicio.component';
 import { LoginComponent } from './login/login.component';
-
-
-
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     RodapeComponent,
-    EntrarComponent,
     CadastrarComponent,
-    ComponentInicioComponent,
-    InicioComponent,
-    LoginComponent,
-    
-    
-    
+    LoginComponent
   ],
   imports: [
     BrowserModule,

@@ -2,8 +2,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
-import { Usuario } from '../model/Usuario';
-import { AuthService } from '../Service/auth.service';
+import { User } from '../model/User';
+import { AuthService } from '../service/auth.service';
 
 
 @Component({
@@ -13,7 +13,7 @@ import { AuthService } from '../Service/auth.service';
 })
 export class CadastrarComponent implements OnInit {
 
-  usuario: Usuario = new Usuario
+  user: User = new User
 
   confirmarSenha: string
   nomeValido: boolean = false;
@@ -56,37 +56,37 @@ export class CadastrarComponent implements OnInit {
 
   confirmSenha(event: any) {
     this.confirmarSenha = event.target.value;
-    this.senhaValida = this.validacao(this.confirmarSenha != this.usuario.senha, event)
+    this.senhaValida = this.validacao(this.confirmarSenha != this.user.senha, event)
   }
 
   tipoUser(event: any) {
-    this.usuario = event.target.value
+    this.user = event.target.value
   }
 
   cadastrar() {
-    if (this.usuario.senha != this.confirmarSenha) {
+    if (this.user.senha != this.confirmarSenha) {
       Swal.fire({
         icon: 'warning',
         title: 'Oops...',
         text: 'As senhas não estão iguais!'
       })
-    // } else {
-    //   this.authService.cadastrar(this.user).subscribe((resp: User) => {
-    //     this.user = resp;
+    } else {
+      this.authService.cadastrar(this.user).subscribe((resp: User) => {
+        this.user = resp;
 
-    //     this.router.navigate(['/entrar'])
-    //     Swal.fire({
-    //       icon: 'success',
-    //       title: 'Boa!',
-    //       text: 'Usuário cadastrado com sucesso!'
-    //     })
-    //   }, erro => {
-    //     Swal.fire({
-    //       icon: 'warning',
-    //       title: 'Oops...',
-    //       text: 'Usuário já existe, por favor escolha outro.',
-    //     })
-    //   })
+        this.router.navigate(['/entrar'])
+        Swal.fire({
+          icon: 'success',
+          title: 'Boa!',
+          text: 'Usuário cadastrado com sucesso!'
+        })
+      }, erro => {
+        Swal.fire({
+          icon: 'warning',
+          title: 'Oops...',
+          text: 'Usuário já existe, por favor escolha outro.',
+        })
+      })
     }
   }
 }

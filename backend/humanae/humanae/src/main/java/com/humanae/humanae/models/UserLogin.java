@@ -4,11 +4,15 @@ public class UserLogin {
 	
 	private String nome;
 	
-	private String usuario;
+	private String email;
 	
 	private String senha;
 	
 	private String token;
+	
+	private boolean tipoParceiros;
+	
+	private boolean tipoDoador;
 
 	public String getNome() {
 		return nome;
@@ -18,12 +22,12 @@ public class UserLogin {
 		this.nome = nome;
 	}
 
-	public String getUsuario() {
-		return usuario;
+	public String getEmail() {
+		return email;
 	}
 
-	public void setUsuario(String usuario) {
-		this.usuario = usuario;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public String getSenha() {
@@ -41,6 +45,22 @@ public class UserLogin {
 	public void setToken(String token) {
 		this.token = token;
 	}
-	
+
+	public boolean isTipoParceiros() {
+		return tipoParceiros;
+	}
+
+	public void setTipoParceiros(boolean tipoParceiros) {
+		this.tipoParceiros = tipoParceiros;
+	}
+
+	public boolean isTipoDoador() {
+		return tipoDoador;
+	}
+
+	public void setTipoDoador(boolean tipoDoador) {
+		this.tipoDoador = tipoDoador;
+	}
+
 
 }

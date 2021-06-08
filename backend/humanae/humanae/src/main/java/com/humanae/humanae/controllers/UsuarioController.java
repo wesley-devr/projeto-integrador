@@ -53,10 +53,12 @@ public class UsuarioController {
 		return ResponseEntity.status(200).body(repository.findById(id));
 	}
 	 
-	@GetMapping("/descricao/{descricao}")
-	public ResponseEntity<List<Usuario>> findAllByDescricao(@PathVariable String descricao) {
-		return ResponseEntity.status(200).body(repository.findAllByCausaContainingIgnoreCase(descricao));
-	}
+	/*
+	 * @GetMapping("/descricao/{descricao}") public ResponseEntity<List<Usuario>>
+	 * findAllByDescricao(@PathVariable String descricao) { return
+	 * ResponseEntity.status(200).body(repository.findAllByCausaContainingIgnoreCase
+	 * (descricao)); }
+	 */
 	 	
 	@PutMapping
 	public ResponseEntity<Usuario> put(@RequestParam Usuario usuario) {

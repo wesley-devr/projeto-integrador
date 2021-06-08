@@ -2,9 +2,8 @@ import { environment } from './../../environments/environment.prod';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
-import { AuthService } from '../Service/auth.service';
-import { UsuarioLogin } from '../model/UsuarioLogin';
-import { Usuario } from '../model/Usuario';
+import { AuthService } from '../service/auth.service';
+import { UserLogin } from '../model/UserLogin';
 
 @Component({
   selector: 'app-login',
@@ -12,8 +11,7 @@ import { Usuario } from '../model/Usuario';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  userLogin: UsuarioLogin = new UsuarioLogin
-  UsuarioLogin: Usuario;
+  userLogin: UserLogin = new UserLogin
 
   constructor(
     private authService: AuthService,
@@ -26,13 +24,13 @@ export class LoginComponent implements OnInit {
   }
 
   entrar(){
-    this.authService.entrar(this.UsuarioLogin).subscribe((resp: Usuario) => {
-      this.UsuarioLogin = resp
-      // environment.id = this.userLogin.id
-      // environment.nome = this.userLogin.nome
-      // environment.token = this.userLogin.token
-      // environment.tipoParceiro = this.userLogin.tipoParceiro
-      // environment.tipoAdministrador = this.userLogin.tipoAdministrador
+    this.authService.entrar(this.userLogin).subscribe((resp: UserLogin) => {
+      this.userLogin = resp
+      environment.id = this.userLogin.id
+      environment.nome = this.userLogin.nome
+      environment.token = this.userLogin.token
+      environment.tipoParceiro = this.userLogin.tipoParceiro
+      environment.tipoAdministrador = this.userLogin.tipoAdministrador
 
       if(this.userLogin.tipoParceiro == false){
         this.router.navigate (['/home'])
