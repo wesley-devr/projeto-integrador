@@ -1,17 +1,16 @@
+import { environment } from './../../environments/environment.prod';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { environment } from 'src/environments/environment.prod';
-import Swal from 'sweetalert2'
-import { UserLogin } from '../model/UserLogin';
+import Swal from 'sweetalert2';
 import { AuthService } from '../service/auth.service';
+import { UserLogin } from '../model/UserLogin';
 
 @Component({
-  selector: 'app-entrar',
-  templateUrl: './entrar.component.html',
-  styleUrls: ['./entrar.component.css']
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
 })
-export class EntrarComponent implements OnInit {
-
+export class LoginComponent implements OnInit {
   userLogin: UserLogin = new UserLogin
 
   constructor(
@@ -53,4 +52,3 @@ export class EntrarComponent implements OnInit {
   }
 
 }
-

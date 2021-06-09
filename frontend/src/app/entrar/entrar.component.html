@@ -2,16 +2,16 @@
 
     <div class="row d-flex align-items-center">
 
-        <div class="col-md-6">
+        <div class="col-md-12">
 
             <div class="row d-flex justify-content-center">
-                <div class="col-md-6">
+                <div class="col-md-4">
 
                     <h1 class="text-center mb-3">Entrar</h1>
 
                     <div class="form-group">
-                        <label for="usuario">Usuário</label>
-                        <input class="form-control" type="text" nome="usuario" id="usuario"
+                        <label for="usuario">Email</label>
+                        <input [(ngModel)]='userLogin.email' class="form-control" type="text" nome="usuario" id="usuario"
                         placeholder="Seu usuário">
                     </div>
 
@@ -22,7 +22,7 @@
                     </div>    
 
                     <div class="row d-flex justify-content-center">
-                        <button type="submit" class="btn btn-success">Entrar</button>
+                        <button type="submit" class="btn btn-success" (click)='entrar()'>Entrar</button>
                     </div>
 
                     <hr class="mt-5 mb-5">
@@ -32,13 +32,7 @@
                     </p>
 
                 </div>
-
             </div>
-
-        </div>
-
-        <div class="col-md-6" id="img-bg">
-
         </div>
     </div>
 </div>
