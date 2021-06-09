@@ -15,7 +15,9 @@ import { RodapeComponent } from './rodape/rodape.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CarrinhoComponent } from './carrinho/carrinho.component';
 import { HomeComponent } from './home/home.component';
+import { TimeComponent } from './home/time/time.component';
 import { ContatoComponent } from './contato/contato.component';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { ContatoComponent } from './contato/contato.component';
     EntrarComponent,
     ParceirosComponent,
     RodapeComponent,
-    HomeComponent, 
+    HomeComponent,
+    TimeComponent,
     ContatoComponent
   ],
   imports: [

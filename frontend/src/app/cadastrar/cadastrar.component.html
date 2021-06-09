@@ -1,12 +1,12 @@
 <div class="container-fluid">
 
-    <div class="row">
+    <div class="row d-flex justify-content-center">
 
         <div class="col-md-6 img-fluid" id='img-bg'></div>
 
         <div class="col-md-6 m-5 mb-5">
 
-            <div class="row d-flex justify-content-center">
+            <div class="row">
                 <div class="col-md-10">
 
                     <h1 class="text-center">Faça Parte</h1>
@@ -50,10 +50,8 @@
 
                     <div class="d-flex justify-content-center">
                         <button class="btn btn-danger mr-4" routerLink='/entrar'>Cancelar</button>
-                        <button class="btn btn-success">Cadastrar</button>
+                        <button class="btn btn-success" (click)='cadastrar()'>Cadastrar</button>
                     </div>
-
-
 
                 </div>
             </div>
