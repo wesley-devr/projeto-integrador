@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {HashLocationStrategy, LocationStrategy} from '@angular/common'
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,8 +15,7 @@ import { RodapeComponent } from './rodape/rodape.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CarrinhoComponent } from './carrinho/carrinho.component';
 import { HomeComponent } from './home/home.component';
-import { HttpClientModule } from '@angular/common/http';
-
+import { ContatoComponent } from './contato/contato.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { HttpClientModule } from '@angular/common/http';
     EntrarComponent,
     ParceirosComponent,
     RodapeComponent,
-    HomeComponent
+    HomeComponent, 
+    ContatoComponent
   ],
   imports: [
     BrowserModule,
