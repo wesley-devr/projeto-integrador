@@ -2,13 +2,27 @@ package com.humanae.humanae.models;
 
 public class UserLogin {
 	
+	private long id;
+	
 	private String nome;
 	
-	private String usuario;
+	private String email;
 	
 	private String senha;
 	
 	private String token;
+	
+	private boolean tipoDoador;
+	
+	private boolean tipoParceiros;
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
 
 	public String getNome() {
 		return nome;
@@ -18,12 +32,12 @@ public class UserLogin {
 		this.nome = nome;
 	}
 
-	public String getUsuario() {
-		return usuario;
+	public String getEmail() {
+		return email;
 	}
 
-	public void setUsuario(String usuario) {
-		this.usuario = usuario;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public String getSenha() {
@@ -41,6 +55,21 @@ public class UserLogin {
 	public void setToken(String token) {
 		this.token = token;
 	}
-	
+
+	public boolean isTipoDoador() {
+		return tipoDoador;
+	}
+
+	public void setTipoDoador(boolean tipoDoador) {
+		this.tipoDoador = tipoDoador;
+	}
+
+	public boolean isTipoParceiros() {
+		return tipoParceiros;
+	}
+
+	public void setTipoParceiros(boolean tipoParceiros) {
+		this.tipoParceiros = tipoParceiros;
+	}
 
 }

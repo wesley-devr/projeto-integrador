@@ -25,9 +25,7 @@ public class Usuario {
 	private String nome;
 
 	@NotNull
-	private String usuario;
-	
-	private boolean parceiro;
+	private String email;
 
 	@NotNull
 	private String senha;
@@ -40,13 +38,47 @@ public class Usuario {
 
 	private String endereco;
 
-	private String email;
-
 	private String conta;
+	
+	private boolean tipoDoador;
+	
+	private boolean tipoParceiros;
 
 	@OneToMany(mappedBy = "usuario")
 	@JsonIgnoreProperties
 	private List<Produtos> produto;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
 
 	public String getCausa() {
 		return causa;
@@ -80,20 +112,28 @@ public class Usuario {
 		this.endereco = endereco;
 	}
 
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
 	public String getConta() {
 		return conta;
 	}
 
 	public void setConta(String conta) {
 		this.conta = conta;
+	}
+
+	public boolean isTipoDoador() {
+		return tipoDoador;
+	}
+
+	public void getTipoDoador(boolean tipoDoador) {
+		this.tipoDoador = tipoDoador;
+	}
+
+	public boolean isTipoParceiros() {
+		return tipoParceiros;
+	}
+
+	public void setTipoParceiros(boolean tipoParceiros) {
+		this.tipoParceiros = tipoParceiros;
 	}
 
 	public List<Produtos> getProduto() {
@@ -103,45 +143,5 @@ public class Usuario {
 	public void setProduto(List<Produtos> produto) {
 		this.produto = produto;
 	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-	public Long getId() {
-		return id;
-	}
-
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-
-	public String getUsuario() {
-		return usuario;
-	}
-
-	public void setUsuario(String usuario) {
-		this.usuario = usuario;
-	}
-
-	public String getSenha() {
-		return senha;
-	}
-
-	public void setSenha(String senha) {
-		this.senha = senha;
-	}
 	
-	public boolean isParceiro() {
-		return parceiro;
-	}
-
-	public void setParceiro(boolean parceiro) {
-		this.parceiro = parceiro;
-	}
-
 }
