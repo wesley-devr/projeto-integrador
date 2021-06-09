@@ -7,3 +7,7 @@
   -moz-appearance: none;
   appearance: none;
 }
+
+html {
+    scroll-behavior: smooth;
+}
