@@ -17,6 +17,7 @@ import { CarrinhoComponent } from './carrinho/carrinho.component';
 import { HomeComponent } from './home/home.component';
 import { TimeComponent } from './home/time/time.component';
 import { ContatoComponent } from './contato/contato.component';
+import { CausasComponent } from './causas/causas.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { ContatoComponent } from './contato/contato.component';
     RodapeComponent,
     HomeComponent,
     TimeComponent,
-    ContatoComponent
+    ContatoComponent,
+    CausasComponent
   ],
   imports: [
     BrowserModule,
