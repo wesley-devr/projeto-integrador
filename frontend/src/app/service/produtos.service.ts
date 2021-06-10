@@ -30,11 +30,11 @@ export class ProdutosService {
   }
 
   postProdutos(produto: Produto): Observable<Produto>{
-    return this.http.post<Produto>(`${environment.baseUrl}/produtos`, Produto, this.token)
+    return this.http.post<Produto>(`${environment.baseUrl}/produtos`, produto, this.token)
   }
 
   putProdutos(produto: Produto): Observable<Produto>{
-    return this.http.put<Produto>(`${environment.baseUrl}/produtos`, Produto, this.token)
+    return this.http.put<Produto>(`${environment.baseUrl}/produtos`, produto, this.token)
   }
 
   deleteProdutos(id: number) {
