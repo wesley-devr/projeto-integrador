@@ -1,0 +1,15 @@
+#img-bg
+{
+  background-image: url(../../assets/img/post-a-uniao-faz-a-forca.jpg);
+
+  min-height: 695px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.pd-top-20 {
+  padding-top: 20px;
+}

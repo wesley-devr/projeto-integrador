@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<!-- <div class="container-fluid">
 
     <div class="row d-flex align-items-center">
 
@@ -16,7 +16,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="usuario">Senha</label>
+                        <label [(ngModel)]='userLogin.senha' for="usuario">Senha</label>
                         <input class="form-control" type="password" nome="senha" id="senha"
                         placeholder="Sua senha">
                     </div>    
@@ -35,5 +35,40 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
+<div class="container-fluid">
+    <div class="row d-flex align-items-center">
+      <div class="col-md-6 p-0">
+  
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-6">
+  
+            <h1 class="text-center mb-3">Entrar</h1>
+  
+            <div class="form-group pd-top-20">
+              <label for="usuario">Usuário</label>
+              <input [(ngModel)]='userLogin.email' type="text" class="form-control" id="usuario" placeholder="Seu usuário">
+            </div>
+            <div class="form-group mb-4" class="pd-top-20">
+              <label for="senha">Senha</label>
+              <input [(ngModel)]='userLogin.senha' type="password" class="form-control" id="senha" placeholder="Senha">
+            </div>
+  
+            <div class="d-flex justify-content-center pd-top-20">
+              <button type="submit" class="btn btn-success" (click)='entrar()'>Entrar</button>
+            </div>
+  
+            <hr class="mb-5 mt-5">
+  
+            <p class="text-center">Não tem uma conta? <a routerLink="/cadastrar">Cadastre-se</a> </p>
+  
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-6 p-0" id="img-bg">
+  
+      </div>
+    </div>
+  </div>

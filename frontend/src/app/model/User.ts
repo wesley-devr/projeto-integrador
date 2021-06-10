@@ -6,9 +6,9 @@ export class User {
     public nome: string
     public email: string
     public senha: string
+    public imagem: string
 	public endereco: string
-    public tipoDoador: boolean
-    public tipoParceiro: boolean
+    public tipo: String
 	public descricao: string
     /*     public produto: Produto[]
     // public usuario: string

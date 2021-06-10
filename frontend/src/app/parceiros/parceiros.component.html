@@ -5,13 +5,13 @@
         <div class="col-md-3">
           <div class=" d-flex justify-content-center">
             <div class=" profile-img text-center " style="  margin-top: 3.5rem; width: 12.50rem; height: 12.50rem; border-radius: 50%; overflow: hidden; border-style: solid ; border-color: whitesmoke;">
-                <img class="img-fluid "src="https://i.imgur.com/DkIJ60f.png" alt="imagem de perfil">
+                <img class="img-fluid "src="{{imagem}}" alt="imagem de perfil">
             </div >
             <div class="container card-perfil text-center">
-              <h2 class="d-flex justify-content-center">Nome da Ong</h2>
+              <h2 class="d-flex justify-content-center">{{nome}}</h2>
               <hr>
               <p  class="font-weight-bold" >  <fa-icon [icon]  ="faCircleInfo" size="1x" [class]="['icones']" ></fa-icon>QUEM SOMOS</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nam adipisci nulla quas labore voluptatem aliquid a molestias ab facilis, ratione, odio nostrum voluptate doloribus asperiores maiores ducimus aperiam dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi corrupti unde autem aut temporibus et nostrum, culpa inventore porro </p>
+              <p>{{descricao}}</p>
               <hr>
               <p class="font-weight-bold">  <fa-icon [icon]  ="faHeart" size="1x" [class]="['icones']" > </fa-icon> NOSSAS CAUSAS</p>
               <p>Mulheres </p>
@@ -36,6 +36,9 @@
 
             <button type="button" class="btn btn-outline-dark my-3" data-toggle="modal" data-target="#ExemploModalCentralizado">
               Cadastrar Produto
+            </button>
+            <button routerLink='/home' type="button" class="btn btn-outline-dark my-3" data-toggle="modal" data-target="#ExemploModalCentralizado">
+              Voltar para home
             </button>
            </div>
           </div>

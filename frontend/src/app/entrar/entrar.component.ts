@@ -30,21 +30,21 @@ export class EntrarComponent implements OnInit {
       environment.id = this.userLogin.id
       environment.nome = this.userLogin.nome
       environment.token = this.userLogin.token
-      environment.tipoParceiro = this.userLogin.tipoParceiro
-      environment.tipoDoador = this.userLogin.tipoDoador
+      environment.tipo = this.userLogin.tipo
+      environment.imagem = this.userLogin.imagem
+      environment.descricao = this.userLogin.descricao
 
-      if(this.userLogin.tipoParceiro == false){
-        this.router.navigate (['/home'])
-      } else {
-        this.router.navigate (['meus-produtos'])
-      }
+
+      console.log(environment);
       
+      
+      this.router.navigate(['/parceiros'])
 
     },error=>{
       if( error.status == 500 ){
         Swal.fire({
           icon: 'warning',
-          title: 'Oops...',
+          title: 'Atenção',
           text: 'Usuário ou senha incorretos!'
         })
 

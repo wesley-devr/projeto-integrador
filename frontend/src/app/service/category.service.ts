@@ -23,6 +23,10 @@ export class CategoryService {
     return this.http.get<Categoria>(`${environment.baseUrl}/categoria/${id}`,this.token)
   }
 
+  getByNome(nome: String):Observable<Categoria>{
+    return this.http.get<Categoria>(`${environment.baseUrl}/nome/${nome}`,this.token)
+  }
+
   postCategoria(categoria: Categoria): Observable<Categoria>{
     return this.http.post<Categoria>(`${environment.baseUrl}/categoria`, categoria, this.token)
   }

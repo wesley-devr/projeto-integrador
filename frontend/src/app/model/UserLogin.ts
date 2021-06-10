@@ -4,6 +4,7 @@ export class UserLogin{
     public email: string
     public senha: string
     public token: string
-    public tipoParceiro: boolean
-    public tipoDoador: boolean
+    public imagem: string
+    public tipo: string
+    public descricao: string
 }

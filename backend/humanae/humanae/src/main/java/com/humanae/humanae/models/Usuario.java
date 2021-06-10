@@ -39,10 +39,10 @@ public class Usuario {
 	private String endereco;
 
 	private String conta;
+		
+	private String imagem;
 	
-	private boolean tipoDoador;
-	
-	private boolean tipoParceiros;
+	private String tipo;
 
 	@OneToMany(mappedBy = "usuario")
 	@JsonIgnoreProperties
@@ -120,20 +120,20 @@ public class Usuario {
 		this.conta = conta;
 	}
 
-	public boolean isTipoDoador() {
-		return tipoDoador;
+	public String getImagem() {
+		return imagem;
 	}
 
-	public void getTipoDoador(boolean tipoDoador) {
-		this.tipoDoador = tipoDoador;
+	public void setImagem(String imagem) {
+		this.imagem = imagem;
 	}
 
-	public boolean isTipoParceiros() {
-		return tipoParceiros;
+	public String getTipo() {
+		return tipo;
 	}
 
-	public void setTipoParceiros(boolean tipoParceiros) {
-		this.tipoParceiros = tipoParceiros;
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
 	}
 
 	public List<Produtos> getProduto() {
