@@ -2,6 +2,11 @@
     color: #333;
 }
 
+.bgcolor{
+    background-color: #ffffff;
+  }
+
+
 .bg-gray-input {
     background-color: rgba(0, 0, 0, 0.05);
     border-radius: 5px;
@@ -37,4 +42,11 @@
    {
     margin-top: 15px;
    }
+}
+
+h1{
+    font-size: 60px;
+    color: #2672B0;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
 }
