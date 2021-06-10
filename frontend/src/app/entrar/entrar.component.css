@@ -1,0 +1,11 @@
+.bgg{
+    background-color: #e9e9e9;
+    color: #2672B0;
+    font-family: "Roboto", sans-serif;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
+.p-100{
+    padding: 100px 3% 20px;
+}

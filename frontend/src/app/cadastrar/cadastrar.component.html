@@ -1,15 +1,13 @@
-<div class="container-fluid">
+
+<div class="container-fluid bgg">    
 
     <div class="row d-flex justify-content-center">
 
-        <div class="col-md-6 img-fluid" id='img-bg'></div>
-
-        <div class="col-md-6 m-5 mb-5">
-
-            <div class="row">
+        <div class="col-md-6 m-5 mb-5">            
+            <div class="row d-flex justify-content-center">                  
                 <div class="col-md-10">
-
-                    <h1 class="text-center">Faça Parte</h1>
+                    <div class="card border-warning mb-3 " style="max-width: 600rem;">
+                    <h1 class="text-center">Junte-se a nós</h1>
 
                     <div class="form-group">
                         <label for="tipo">Tipo de Usuário</label>
@@ -49,9 +47,11 @@
                     
 
                     <div class="d-flex justify-content-center">
-                        <button class="btn btn-danger mr-4" routerLink='/entrar'>Cancelar</button>
-                        <button class="btn btn-success" (click)='cadastrar()'>Cadastrar</button>
+                        <button class="btn btn-lg btn-primary text-white mr-4" routerLink='/entrar'>Cancelar</button>
+                        <button class="btn btn-lg btn-warning text-white" (click)='cadastrar()'>Cadastrar</button>
                     </div>
+
+                </div>
 
                 </div>
             </div>
