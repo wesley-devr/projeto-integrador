@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faHeart, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 
@@ -9,9 +10,13 @@ import { faHeart, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 })
 export class ParceirosComponent implements OnInit{
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    window.scroll(0,0)
+    
   }
   faFacebook = faFacebook;
   faInstagram = faInstagram;
