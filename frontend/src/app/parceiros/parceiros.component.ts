@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faHeart, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
+import { environment } from 'src/environments/environment.prod';
 
 @Component({
   selector: 'app-parceiros',
@@ -10,9 +11,11 @@ import { faHeart, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 })
 export class ParceirosComponent implements OnInit{
 
-  constructor(
-    private router: Router
-  ) { }
+  nome = environment.nome
+  imagem = environment.imagem
+  descricao = environment.descricao
+
+  constructor() { }
 
   ngOnInit() {
     window.scroll(0,0)

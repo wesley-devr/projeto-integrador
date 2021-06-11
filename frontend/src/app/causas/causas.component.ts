@@ -15,5 +15,4 @@ export class CausasComponent implements OnInit {
   ngOnInit() {
     window.scroll(0,0)
   }
-
 }

@@ -12,9 +12,9 @@ public class UserLogin {
 	
 	private String token;
 	
-	private boolean tipoDoador;
+	private String imagem;
 	
-	private boolean tipoParceiros;
+	private String tipo;
 
 	public long getId() {
 		return id;
@@ -56,20 +56,20 @@ public class UserLogin {
 		this.token = token;
 	}
 
-	public boolean isTipoDoador() {
-		return tipoDoador;
+	public String getImagem() {
+		return imagem;
 	}
 
-	public void setTipoDoador(boolean tipoDoador) {
-		this.tipoDoador = tipoDoador;
+	public void setImagem(String imagem) {
+		this.imagem = imagem;
 	}
 
-	public boolean isTipoParceiros() {
-		return tipoParceiros;
+	public String getTipo() {
+		return tipo;
 	}
 
-	public void setTipoParceiros(boolean tipoParceiros) {
-		this.tipoParceiros = tipoParceiros;
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
 	}
 
 }
