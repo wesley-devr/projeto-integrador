@@ -9,10 +9,8 @@ import { ParceirosComponent } from './parceiros/parceiros.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
-
   {path: 'entrar', component: EntrarComponent},
   {path: 'cadastrar', component: CadastrarComponent},
-
   {path: 'home', component: HomeComponent},
   {path: 'parceiros', component: ParceirosComponent},
   {path: 'carrinho', component: CarrinhoComponent},
