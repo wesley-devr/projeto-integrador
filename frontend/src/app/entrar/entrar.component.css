@@ -26,7 +26,7 @@ h1{
 
 .card{    
     display: flex;
-    padding: 60px;
+    padding: 70px;
     box-sizing: border-box;
     box-shadow: 0 20px 50px rgba(235, 220, 22, 0.8);
 }
