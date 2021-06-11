@@ -1,5 +1,4 @@
 import { Categoria } from "./Categoria"
-import { Comentario } from "./Comentario"
 import { User } from "./User"
 
 export class Produto{

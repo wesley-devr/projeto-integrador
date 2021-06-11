@@ -14,7 +14,6 @@ import { AuthService } from '../service/auth.service';
 export class CadastrarComponent implements OnInit {
 
   user: User = new User()
-  
   confirmarSenha: String
   tipoUsuario: string
 
@@ -39,11 +38,8 @@ export class CadastrarComponent implements OnInit {
   }
 
   cadastrar() {
-    
       this.user.tipo = this.tipoUsuario
-
       if(this.user.senha !== this.confirmarSenha) {
-
         Swal.fire(
           "Senha Incorreta!",
           "Tente novamente!",

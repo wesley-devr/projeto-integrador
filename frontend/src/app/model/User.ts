@@ -1,4 +1,3 @@
-import { Comentario } from "./Comentario"
 import { Produto } from "./Produto"
 
 export class User {

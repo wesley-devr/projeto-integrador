@@ -3,11 +3,14 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment.prod';
 import { Produto } from '../model/Produto';
+import { UserLogin } from '../model/UserLogin';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProdutosService {
+
+  userLogin: UserLogin = new UserLogin()
 
   constructor(
     private http: HttpClient
@@ -16,9 +19,10 @@ export class ProdutosService {
   token = {
     headers: new HttpHeaders().set('Authorization', environment.token)
   }
+  
 
   getAllProdutos(): Observable<Produto[]> {
-    return this.http.get<Produto[]>(`${environment.baseUrl}/produtos`,this.token)
+    return this.http.get<Produto[]>(`${environment.baseUrl}/produtos`, this.token)
   }
 
   getByIdProdutos(id: number):Observable<Produto>{
@@ -30,7 +34,7 @@ export class ProdutosService {
   }
 
   postProdutos(produto: Produto): Observable<Produto>{
-    return this.http.post<Produto>(`${environment.baseUrl}/produtos`, produto, this.token)
+    return this.http.post<Produto>(`${environment.baseUrl}/produtos/cadastrar`, produto, this.token)
   }
 
   putProdutos(produto: Produto): Observable<Produto>{
