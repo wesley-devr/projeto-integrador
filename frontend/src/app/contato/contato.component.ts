@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contato.component.css']
 })
 export class ContatoComponent implements OnInit {
+  botaoClicado() {
+    alert('Mensagem Enviada!');
+  }
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(){
   }
+
 
 }
