@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {HashLocationStrategy, LocationStrategy} from '@angular/common'
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,7 +16,9 @@ import { RodapeComponent } from './rodape/rodape.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CarrinhoComponent } from './carrinho/carrinho.component';
 import { HomeComponent } from './home/home.component';
-import { HttpClientModule } from '@angular/common/http';
+import { TimeComponent } from './home/time/time.component';
+import { ContatoComponent } from './contato/contato.component';
+import { CausasComponent } from './causas/causas.component';
 
 
 
@@ -32,8 +36,13 @@ import { HttpClientModule } from '@angular/common/http';
     EntrarComponent,
     ParceirosComponent,
     RodapeComponent,
-    HomeComponent
 
+    HomeComponent,
+    TimeComponent,
+    ContatoComponent,
+    CausasComponent
+
+    
   ],
   imports: [
     BrowserModule,

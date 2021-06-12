@@ -8,8 +8,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.humanae.humanae.models.Usuario;
 
 public interface UsuarioRepository  extends JpaRepository<Usuario, Long>{
-	public Optional<Usuario> findByUsuario(String usuario);
+	
+	public Optional<Usuario> findByEmail(String email);
 	
 	public List<Usuario> findAllByCausaContainingIgnoreCase(String descricao);
-
+	
 }
