@@ -4,7 +4,7 @@ export const environment = {
   token: '',
   nome: '',
   id: 0,
-  image: '',
-  tipoParceiro: false,
-  tipoDoador: false
+  imagem: '',
+  tipoUser: '',
+  descricao: ''
 };
