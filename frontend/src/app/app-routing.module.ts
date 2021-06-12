@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
+
 import { CarrinhoComponent } from './carrinho/carrinho.component';
 import { CausasComponent } from './causas/causas.component';
 import { EntrarComponent } from './entrar/entrar.component';
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path: 'parceiros', component: ParceirosComponent},
   {path: 'carrinho', component: CarrinhoComponent},
   {path: 'causas', component: CausasComponent}
+
 
 ];
 

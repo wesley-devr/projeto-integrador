@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { EntrarComponent } from './entrar/entrar.component';
 import { MenuComponent } from './menu/menu.component';
+
 import { ParceirosComponent } from './parceiros/parceiros.component';
 import { RodapeComponent } from './rodape/rodape.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -20,6 +21,7 @@ import { ContatoComponent } from './contato/contato.component';
 import { CausasComponent } from './causas/causas.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,16 +29,20 @@ import { CausasComponent } from './causas/causas.component';
     RodapeComponent,
     EntrarComponent,
     CadastrarComponent,
+
     ParceirosComponent,
     CarrinhoComponent,
     CadastrarComponent,
     EntrarComponent,
     ParceirosComponent,
     RodapeComponent,
+
     HomeComponent,
     TimeComponent,
     ContatoComponent,
     CausasComponent
+
+    
   ],
   imports: [
     BrowserModule,
